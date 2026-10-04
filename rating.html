@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffdeeb" />
+    <title>Қаншалықты ренжідіңіз? 🌸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <main class="stage rating-stage">
+      <section class="card rating-card" aria-labelledby="rating-title">
+        <p class="eyebrow">ШЫНЫН АЙТЫҢЫЗШЫ</p>
+        <h1 id="rating-title">Сіз маған қаншалықты<br /><em>ренжідіңіз?</em></h1>
+        <p class="message">Сызық бойымен меңзерді жүргізіп, бір мәнді таңдаңыз.</p>
+        <div
+          class="rating-line"
+          id="ratingLine"
+          role="slider"
+          tabindex="0"
+          aria-label="Реніш деңгейін таңдаңыз"
+          aria-valuemin="0"
+          aria-valuemax="11"
+          aria-valuenow="0"
+          aria-valuetext="67"
+        >
+          <div class="rating-track" aria-hidden="true">
+            <span class="rating-progress"></span>
+            <span class="rating-thumb"></span>
+          </div>
+          <output class="rating-bubble" id="ratingBubble">67</output>
+        </div>
+      </section>
+    </main>
+    <script src="paper.js"></script><script src="rating.js"></script>
+  </body>
+</html>
